@@ -1,0 +1,46 @@
+body {
+    background: url("https://img.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg?size=338&ext=jpg");
+}
+
+#title {
+    margin-top: 2.5%;
+}
+
+#form {
+    font-family: "Roboto", sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    align-items: center;
+    grid-gap: 10px 25px;
+    margin-bottom: 10px;
+}
+
+.items {
+    display: flex;
+}
+
+.labels {
+    margin-top: 6px;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.fields {
+    width: 70%;
+}
+
+#dropdown {
+    width: 30%;
+}

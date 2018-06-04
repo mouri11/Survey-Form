@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FCC: Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 offset-md-3">
+                <h1 id="title" align="center">Survey Form</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2" id="form">
+
+                <p id="description" align="center" style="margin-top: 5px;">Let us know how we can improve this site</p>
+                <form id="survey-form" align="center" action="">
+                    <div class="grid-container">
+                        <label for="name" id="name-label" class="labels items">* Name :</label>
+                        <input type="text" name="name" id="name" class="fields items" placeholder="Enter Name" required>
+
+                        <label for="email" id="email-label" class="labels items">* Email :</label>
+                        <input type="email" name="email" id="email" class="fields items" placeholder="Enter Email ID" required>
+                        
+                        <label for="age" id="number-label" class="labels items">* Age :</label>
+                        <input type="number" name="age" id="number" class="fields items" placeholder="Enter Age" required min="18" max="60">
+                        
+                        <label for="occu" id="dropdown-label" class="labels items">Select your current role :</label>
+                        <select name="occu" id="dropdown" class="fields items">
+                            <option disabled>Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="part-time">Part-Time Job</option>
+                            <option value="full-time">Full-Time Job</option>
+                            <option value="uncited">Prefer not to say</option>
+                            <option value="none">None</option>
+                        </select>
+
+                        <label for="options" id="options-label" class="labels items" align="right" style="margin-top: 0px;">* How likely are you to recommend this site? :</label>
+                        <ul id="options">
+                            <li align="left"><input type="radio" name="options" value="1"> Very Likely</li>
+                            <li align="left"><input type="radio" name="options" value="2"> I'll think about it</li>
+                            <li align="left"><input type="radio" name="options" value="3"> Not Likely</li>
+                        </ul>
+
+                        <label for="checks" id="checks-label" class="labels items" align="right" style="margin-top: 0px;">Likely areas to improve :</label>
+                        <ul name="checks">
+                            <li align="left"><input type="checkbox" value="0"> Front-End</li>
+                            <li align="left"><input type="checkbox" value="1"> UI and UX</li>
+                            <li align="left"><input type="checkbox" value="2"> Back-end</li>
+                            <li align="left"><input type="checkbox" value="3"> Site Navigation</li>
+                        </ul>
+
+                        <label for="occu" id="dropdown-label" class="labels items">Any suggestions or comments? :</label>
+
+                        <textarea style="height: 50px" name="comments" class="fields items" placeholder="Type your comments here"></textarea>
+                    </div>
+
+                    <input class="btn btn-primary" type="submit" id="submit" value="Submit" style="margin-bottom: 10px;">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
